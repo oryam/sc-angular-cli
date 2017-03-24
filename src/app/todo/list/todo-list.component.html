@@ -1,0 +1,6 @@
+<div>Todos</div>
+<div *ngFor="let todo of todos | async">
+    <div>{{todo.id}}</div>
+    <div>{{todo.title}}</div>
+    <div>{{todo.completed}}</div>
+</div>

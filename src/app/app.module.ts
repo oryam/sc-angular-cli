@@ -10,12 +10,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { UserListComponent } from './user/list/user-list.component';
 import { UserService } from './user/service/user.service';
+import { TodoListComponent } from './todo/list/todo-list.component';
+import { TodoService } from './todo/service/todo.service';
 
 @NgModule( {
     declarations: [
         AppComponent,
+        HomeComponent,
         UserListComponent,
-        HomeComponent
+        TodoListComponent,
     ],
     imports: [
         BrowserModule,
@@ -25,6 +28,7 @@ import { UserService } from './user/service/user.service';
     ],
     providers: [
         UserService,
+        TodoService,
     ],
     bootstrap: [AppComponent]
 })
