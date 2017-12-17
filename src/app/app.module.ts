@@ -12,6 +12,8 @@ import { UserListComponent } from './user/list/user-list.component';
 import { TodoListComponent } from './todo/list/todo-list.component';
 import { UserService } from './user/service/user.service';
 import { TodoService } from './todo/service/todo.service';
+import { SandboxComponent } from './sandbox/sandbox.component';
+import { SampleComponent } from './sample/sample.component';
 
 
 @NgModule({
@@ -20,6 +22,8 @@ import { TodoService } from './todo/service/todo.service';
         HomeComponent,
         UserListComponent,
         TodoListComponent,
+        SandboxComponent,
+        SampleComponent,
     ],
     imports: [
         BrowserModule,
