@@ -12,6 +12,7 @@ phases:
     commands:
       - echo Clean started on `date`
       - rm -rf dist
+      - npm i
   build:
     commands:
       - echo Build started on `date`
