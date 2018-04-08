@@ -5,8 +5,8 @@ phases:
     commands:
       - echo Install started on `date`
       - npm -v
-      - npm i -g npm@latest
-      - npm i -g @angular/cli@latest
+      - sudo npm i -g npm@latest
+      - sudo npm i -g @angular/cli@latest
       - ng -v
   pre_build:
     commands:
