@@ -1,0 +1,26 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Install started on `date`
+      - npm -v
+      - npm i -g npm@latest
+      - npm i -g @angular/cli@latest
+      - ng -v
+  pre_build:
+    commands:
+      - echo Clean started on `date`
+      - rm -rf dist
+  build:
+    commands:
+      - echo Build started on `date`
+      - ng build --prod
+      - zip -r app.zip dist
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - app.zip
+  discard-paths: yes
