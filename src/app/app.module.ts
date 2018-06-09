@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, PreloadAllModules } from '@angular/router';
 
@@ -16,28 +15,26 @@ import { TodoService } from './todo/service/todo.service';
 import { SandboxComponent } from './sandbox/sandbox.component';
 import { SampleComponent } from './sample/sample.component';
 
-
 @NgModule({
-    declarations: [
-        AppComponent,
-        HomeComponent,
-        UserListComponent,
-        TodoListComponent,
-        SandboxComponent,
-        SampleComponent,
-        UserPipe,
-    ],
-    imports: [
-        BrowserModule,
-        FormsModule,
-        HttpModule,
-        HttpClientModule,
-        RouterModule.forRoot(AppRoute, { useHash: false, preloadingStrategy: PreloadAllModules }),
-    ],
-    providers: [
-        UserService,
-        TodoService,
-    ],
-    bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    UserListComponent,
+    TodoListComponent,
+    SandboxComponent,
+    SampleComponent,
+    UserPipe
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    RouterModule.forRoot(AppRoute, {
+      useHash: false,
+      preloadingStrategy: PreloadAllModules
+    })
+  ],
+  providers: [UserService, TodoService],
+  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

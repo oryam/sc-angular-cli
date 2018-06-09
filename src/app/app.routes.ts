@@ -7,10 +7,10 @@ import { SandboxComponent } from './sandbox/sandbox.component';
 import { SampleComponent } from './sample/sample.component';
 
 export const AppRoute: Routes = [
-    { path: '', redirectTo: '/users', pathMatch: 'full' },
-    { path: 'home', component: HomeComponent },
-    { path: 'users', component: UserListComponent },
-    { path: 'todos', component: TodoListComponent },
-    { path: 'sandbox', component: SandboxComponent },
-    { path: 'sample', component: SampleComponent },
+  { path: '', redirectTo: '/users', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'users', component: UserListComponent },
+  { path: 'todos', component: TodoListComponent },
+  { path: 'sandbox', component: SandboxComponent },
+  { path: 'sample', component: SampleComponent }
 ];
